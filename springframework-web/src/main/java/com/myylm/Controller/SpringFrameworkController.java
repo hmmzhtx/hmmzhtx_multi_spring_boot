@@ -12,7 +12,7 @@ import java.util.Map;
  * @author huangmingming
  */
 @Controller
-public class HelloWordController {
+public class SpringFrameworkController {
 
     @RequestMapping("/hello")
     @ResponseBody

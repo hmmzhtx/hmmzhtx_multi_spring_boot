@@ -17,20 +17,4 @@
         
     </dependencies>
 
-
-    <!--指定打包插件 -->
-    <build>
-        <!-- 为jar包取名 -->
-        <finalName>web</finalName>
-        
-        <plugins>
-            <!--该插件主要用途：构建可执行的JAR -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-        
-    </build>
-
 </project>
