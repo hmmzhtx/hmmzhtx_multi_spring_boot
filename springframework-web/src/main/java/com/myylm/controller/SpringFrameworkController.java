@@ -1,4 +1,4 @@
-package com.myylm.Controller;
+package com.myylm.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -13,7 +13,6 @@ import java.util.Map;
  */
 @Controller
 public class SpringFrameworkController {
-
 
     /**
      * freemarker

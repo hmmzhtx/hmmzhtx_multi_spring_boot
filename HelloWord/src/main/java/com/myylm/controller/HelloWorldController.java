@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * Created by minghuang on 2018/3/23.
  */
 @Controller
-public class HelloWordController {
+public class HelloWorldController {
 
     @RequestMapping("/hello")
     @ResponseBody
     public String HelloWordController(){
-        return "Hello Word";
+        return "Hello world";
     }
 
 
