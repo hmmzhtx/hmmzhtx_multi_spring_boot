@@ -22,8 +22,9 @@ public class ThymeleafController {
      */
     @RequestMapping("/toThy")
     public String index(Model model){
-        logger.trace("测试1");
-        logger.info("测试2");
+        logger.info("info");
+        logger.error("error");
+        logger.trace("trace");
         model.addAttribute("name", "11111");
         return "thy";
     }
