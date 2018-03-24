@@ -22,9 +22,13 @@ public class ThymeleafController {
      */
     @RequestMapping("/toThy")
     public String index(Model model){
-        logger.info("info");
-        logger.error("error");
-        logger.trace("trace");
+        //日志级别从低到高分为TRACE < DEBUG < INFO < WARN < ERROR < FATAL，如果设置为WARN，则低于WARN的信息都不会输出。
+        logger.trace("日志输出 trace");
+        logger.debug("日志输出 debug");
+        logger.info("日志输出 info");
+        logger.warn("日志输出 warn");
+        logger.error("日志输出 error");
+
         model.addAttribute("name", "11111");
         return "thy";
     }
