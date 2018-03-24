@@ -11,6 +11,7 @@
 	<modules>
 		<module>springframework-web</module>
 		<module>thymeleaf-web</module>
+		<module>HelloWord</module>
 	</modules>
 	<packaging>pom</packaging>
 
@@ -23,7 +24,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.0.RELEASE</version>
-		<relativePath/> 
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -75,7 +76,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
-		
 	</dependencies>
 
 
@@ -86,7 +86,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>1.3.0.RELEASE</version>
 
-				<configuration> <!-- 指定该Main Class为全局的唯一入口 -->
+				<configuration><!-- 指定该Main Class为全局的唯一入口 -->
 					<mainClass>com.myylm.DemoApplication</mainClass>
 					<layout>ZIP</layout>
 				</configuration>

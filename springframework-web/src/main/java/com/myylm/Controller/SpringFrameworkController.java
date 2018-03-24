@@ -9,16 +9,10 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.Map;
 
 /**
- * @author huangmingming
+ * @author hmmzhtx
  */
 @Controller
 public class SpringFrameworkController {
-
-    @RequestMapping("/hello")
-    @ResponseBody
-    public String HelloWordController(){
-             return "Hello Word";
-    }
 
 
     /**
