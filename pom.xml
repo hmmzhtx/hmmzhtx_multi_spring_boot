@@ -12,6 +12,7 @@
 		<module>springframework-web</module>
 		<module>thymeleaf-web</module>
 		<module>HelloWord</module>
+		<module>logModule</module>
 	</modules>
 	<packaging>pom</packaging>
 
@@ -78,6 +79,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
+		
 	</dependencies>
 
 
@@ -87,7 +89,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>1.3.0.RELEASE</version>
-
 				<configuration><!-- 指定该Main Class为全局的唯一入口 -->
 					<mainClass>com.myylm.DemoApplication</mainClass>
 					<layout>ZIP</layout>
