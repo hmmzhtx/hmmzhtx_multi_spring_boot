@@ -9,10 +9,11 @@
 	
 	<!-- 模块说明：这里声明多个子模块 -->
 	<modules>
-		<module>springframework-web</module>
-		<module>thymeleaf-web</module>
-		<module>HelloWord</module>
-		<module>logModule</module>
+		<module>Spring_Boot_Springframework_Web</module>
+		<module>Spring_Boot_Thymeleaf_Web</module>
+		<module>Spring_Boot_HelloWorld</module>
+		<module>Spring_Boot_LogModule</module>
+		<module>Spring_Boot_Scheduler</module>
 	</modules>
 	<packaging>pom</packaging>
 
