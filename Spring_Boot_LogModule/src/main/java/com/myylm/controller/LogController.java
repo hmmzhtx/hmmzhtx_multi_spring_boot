@@ -1,4 +1,4 @@
-package com.myylm.task;
+package com.myylm.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +25,4 @@ public class LogController {
         logger.error("日志输出 error");
         return "打印！！";
     }
-
-
-
 }
