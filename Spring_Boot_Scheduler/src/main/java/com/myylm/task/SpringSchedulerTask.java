@@ -1,4 +1,4 @@
-package com.myylm.task;
+package com.myylm.controller;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

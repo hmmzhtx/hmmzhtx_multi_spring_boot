@@ -5,6 +5,7 @@
 
 ### 架包模块
 > 这是使用log4j2模块，这里引入log4j2模块，需要剔除自带的logging模块
+
 ```$xslt
 <!--web模块-->
 <dependency>
@@ -31,6 +32,7 @@
 ### 日志模块信息
 > 对每个日志的类型，输入到指定的文件夹是我自己喜欢用的一种方式，这里我只记录了此一种方式。
 > 在resources中新建“logback-boot.xml”文件，内容如下:
+
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
@@ -190,6 +192,7 @@
 ```
 ### application 对日志模块引用
 > 文件"application.properties"中添加：logging.config = classpath:logback-boot.xml
+
 ### 源码中使用
 ```java
 import org.slf4j.Logger;
@@ -219,5 +222,6 @@ public class LogController {
     }
 }
 ```
-
+### 项目地址
+[https://github.com/hmmzhtx/hmmzhtx_multi_spring_boot/tree/master/Spring_Boot_LogModule](https://github.com/hmmzhtx/hmmzhtx_multi_spring_boot/tree/master/Spring_Boot_LogModule)
 
