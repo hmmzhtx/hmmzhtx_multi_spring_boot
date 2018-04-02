@@ -14,6 +14,8 @@
 		<module>Spring_Boot_HelloWorld</module>
 		<module>Spring_Boot_LogModule</module>
 		<module>Spring_Boot_Scheduler</module>
+        <module>Spring_Boot_Jpa_Thymeleaf_Web</module>
+		<module>Spring_Boot_Common</module>
 	</modules>
 	<packaging>pom</packaging>
 
@@ -80,7 +82,21 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
-		
+
+		<!--工具-->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+
+		<!--工具-->
+		<dependency>
+			<groupId>com.google.code.google-collections</groupId>
+			<artifactId>google-collect</artifactId>
+			<version>snapshot-20080530</version>
+		</dependency>
+
 	</dependencies>
 
 
