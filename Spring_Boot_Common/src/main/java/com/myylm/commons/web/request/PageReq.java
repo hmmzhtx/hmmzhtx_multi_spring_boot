@@ -1,7 +1,7 @@
 package com.myylm.commons.web.request;
 
 /**
- * @des 分页常用
+ * @des 分页参数
  * @author hmmzhtx
  */
 public class PageReq {

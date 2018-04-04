@@ -12,6 +12,7 @@ public class PageResp<U> {
     private List<T> data;
 
     public PageResp() {
+        
     }
 
     public PageResp(Long count, List<T> data) {
