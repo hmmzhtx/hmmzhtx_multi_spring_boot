@@ -44,7 +44,7 @@ public interface UserService {
     /**
      * 分页查询
      * @param  userDto
-     * @return Page<UserModel>
+     * @return PageResp<UserModel>
      * */
     PageResp<UserModel> findPage(UserDto userDto);
 

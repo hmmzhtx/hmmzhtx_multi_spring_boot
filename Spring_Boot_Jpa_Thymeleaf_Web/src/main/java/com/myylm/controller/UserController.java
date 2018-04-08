@@ -39,6 +39,14 @@ public class UserController {
 
 
 
+    @RequestMapping(value = "/test",method = {RequestMethod.GET, RequestMethod.POST})
+    @ResponseBody
+    public String test( ){
+        System.out.println(1111);
+        return "111";
+    }
+
+
 
 
 
