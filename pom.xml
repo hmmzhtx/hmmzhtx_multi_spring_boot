@@ -16,7 +16,8 @@
 		<module>Spring_Boot_Scheduler</module>
         <module>Spring_Boot_Jpa_Thymeleaf_Web</module>
 		<module>Spring_Boot_Common</module>
-	</modules>
+        <module>Spring_Boot_War</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>hmmzhtx_multi</name>

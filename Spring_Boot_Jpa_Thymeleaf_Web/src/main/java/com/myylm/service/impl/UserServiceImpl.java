@@ -17,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.criteria.*;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.util.Assert;
 
 /**
  * @author hmmzhtx
