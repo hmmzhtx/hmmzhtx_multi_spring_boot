@@ -4,6 +4,8 @@ import com.myylm.commons.web.response.PageResp;
 import com.myylm.dto.request.UserDto;
 import com.myylm.model.UserModel;
 import com.myylm.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -21,6 +23,8 @@ import javax.validation.Valid;
 @Controller
 public class UserController {
 
+    public  static Logger logger = LoggerFactory.getLogger(UserController.class);
+
     @Autowired
     private UserService userService;
 
@@ -36,6 +40,15 @@ public class UserController {
         modelMap.put("data",page);
        return new ModelAndView("user",modelMap);
     }
+
+
+    @RequestMapping(value = "/testView",method = {RequestMethod.GET, RequestMethod.POST})
+    public ModelAndView testView(ModelMap modelMap){
+        logger.info("testView");
+        modelMap.put("data","1111");
+        return new ModelAndView("Test",modelMap);
+    }
+
 
 
 
