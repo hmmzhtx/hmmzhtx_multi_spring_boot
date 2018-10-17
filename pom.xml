@@ -9,15 +9,16 @@
 	
 	<!-- 模块说明：这里声明多个子模块 -->
 	<modules>
+		<module>Spring_Boot_Common</module>
 		<module>Spring_Boot_Springframework_Web</module>
 		<module>Spring_Boot_Thymeleaf_Web</module>
 		<module>Spring_Boot_HelloWorld</module>
 		<module>Spring_Boot_LogModule</module>
 		<module>Spring_Boot_Scheduler</module>
         <module>Spring_Boot_Jpa_Thymeleaf_Web</module>
-		<module>Spring_Boot_Common</module>
         <module>Spring_Boot_War</module>
-    </modules>
+		<module>Spring_Boot_Zhirong_Parent</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>hmmzhtx_multi</name>
@@ -42,7 +43,15 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+			<exclusions>
+				<!-- 剔除logging -->
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
+		
 
 		<!--测试模块，包括JUnit、Hamcrest、Mockito-->
 		<dependency>
@@ -63,13 +72,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<exclusions>
-				<!-- 剔除logging -->
-				<exclusion>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-logging</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
 
@@ -87,5 +89,14 @@
 		</dependency>
 
 	</dependencies>
+
+
+
+
+
+
+
+
+	
 
 </project>

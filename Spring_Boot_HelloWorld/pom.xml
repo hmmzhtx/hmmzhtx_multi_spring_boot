@@ -11,6 +11,13 @@
 
     <artifactId>Spring_Boot_HelloWorld</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.myylm</groupId>
+            <artifactId>Spring_Boot_Common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

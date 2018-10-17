@@ -3,30 +3,49 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>hmmzhtx_multi</artifactId>
+        <artifactId>zhirong_parent</artifactId>
         <groupId>com.myylm</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>Spring_Boot_War</artifactId>
+
+    <artifactId>zhirong_web</artifactId>
     <packaging>war</packaging>
 
     <dependencies>
-        
+
         <!-- 这里指定打包的时候不再需要tomcat相关的包 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
         </dependency>
+      
+        <dependency>
+            <groupId>com.myylm</groupId>
+            <artifactId>zhirong_model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.apache.tomcat.embed</groupId>-->
-            <!--<artifactId>tomcat-embed-jasper</artifactId>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        
+        <dependency>
+            <groupId>com.myylm</groupId>
+            <artifactId>zhirong_persistence</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.myylm</groupId>
+            <artifactId>zhirong_service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.myylm</groupId>
+            <artifactId>zhirong_controller</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
@@ -49,8 +68,12 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
-            
         </plugins>
+        <finalName>zhirong</finalName>
     </build>
 
+    
+
+    
+    
 </project>
