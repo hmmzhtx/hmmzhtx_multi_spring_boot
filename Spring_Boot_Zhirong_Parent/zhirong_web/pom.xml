@@ -20,7 +20,7 @@
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
         </dependency>
-      
+
         <dependency>
             <groupId>com.myylm</groupId>
             <artifactId>zhirong_model</artifactId>
