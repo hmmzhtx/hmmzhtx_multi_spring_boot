@@ -22,6 +22,10 @@
 
 
     <dependencies>
+        
+
+
+
         <!--JPA 模块-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -41,11 +45,6 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
-        <!-- 添加Log4j -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-log4j2</artifactId>
-        </dependency>
 
             
     </dependencies>

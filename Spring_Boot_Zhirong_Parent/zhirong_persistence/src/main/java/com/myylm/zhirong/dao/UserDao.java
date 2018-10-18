@@ -3,6 +3,7 @@ package com.myylm.zhirong.dao;
 import com.myylm.zhirong.model.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 /**
@@ -20,6 +21,7 @@ public interface UserDao extends JpaRepository<UserModel, Integer>, JpaSpecifica
      * @param username
      * @return  UserModel
      */
+    @Query("from  UserModel where username =:username")
     UserModel findByUsername(@Param("username") String username);
 
 

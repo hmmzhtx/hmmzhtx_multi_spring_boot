@@ -1,6 +1,7 @@
 package com.myylm.zhirong.controller;
 
 import com.myylm.commons.aop.LoggerManage;
+import com.myylm.zhirong.model.UserModel;
 import com.myylm.zhirong.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,14 +29,14 @@ public class UserController {
     @RequestMapping(value = "/test",method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
     @LoggerManage(logDescription = "测试日志")
-    public String test( ){
+    public UserModel test( ){
         //日志级别从低到高分为TRACE < DEBUG < INFO < WARN < ERROR < FATAL，如果设置为WARN，则低于WARN的信息都不会输出。
         logger.trace("日志输出 trace");
         logger.debug("日志输出 debug");
         logger.info("日志输出 info");
         logger.warn("日志输出 warn");
         logger.error("日志输出 error");
-        return "true";
+        return userService.findUserModelByName("命名");
     }
 
 
