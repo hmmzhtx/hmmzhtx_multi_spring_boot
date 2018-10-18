@@ -27,7 +27,7 @@ public class UserController {
 
     @RequestMapping(value = "/test",method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
-    @LoggerManage(logDescription = "測試日志")
+    @LoggerManage(logDescription = "测试日志")
     public String test( ){
         //日志级别从低到高分为TRACE < DEBUG < INFO < WARN < ERROR < FATAL，如果设置为WARN，则低于WARN的信息都不会输出。
         logger.trace("日志输出 trace");
