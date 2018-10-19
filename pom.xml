@@ -17,7 +17,6 @@
 		<module>Spring_Boot_Scheduler</module>
         <module>Spring_Boot_Jpa_Thymeleaf_Web</module>
         <module>Spring_Boot_War</module>
-		<module>Spring_Boot_Zhirong_Parent</module>
 	</modules>
 	<packaging>pom</packaging>
 
