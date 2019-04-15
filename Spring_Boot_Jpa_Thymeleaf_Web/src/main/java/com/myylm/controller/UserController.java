@@ -20,7 +20,8 @@ import javax.validation.Valid;
 /**
  * @author hmmzhtx
  */
-@Controller
+@RestController
+@RequestMapping(value = "user")
 public class UserController {
 
     public  static Logger logger = LoggerFactory.getLogger(UserController.class);
@@ -29,7 +30,7 @@ public class UserController {
     private UserService userService;
 
 
-    @RequestMapping(value = "/userPage",method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(value = "/page",method = RequestMethod.GET)
     public ModelAndView findPage(@Valid UserDto userDto, BindingResult result, ModelMap modelMap){
         PageResp<UserModel>  page = null;
         if (result.hasErrors()) {

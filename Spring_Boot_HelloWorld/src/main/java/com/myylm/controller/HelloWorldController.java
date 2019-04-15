@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
@@ -24,7 +25,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 
 
-@Controller
+@RestController
 @RequestMapping("/hello")
 public class HelloWorldController {
 
@@ -35,7 +36,7 @@ public class HelloWorldController {
      * 返回其 json数据
      * @return
      */
-    @RequestMapping(value = "/helloSay", method= {RequestMethod.GET,RequestMethod.POST})
+    @RequestMapping(value = "/helloSay", method = RequestMethod.GET)
     @ResponseBody  //此注解是设定返回数据 还是 到页面模版
     @LoggerManage(logDescription = "日志Hello")
     public String HelloWordController(){

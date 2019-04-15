@@ -3,6 +3,8 @@ package com.myylm.dto.request;
 
 import com.myylm.commons.web.request.PageReq;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * @author hmmzhtx
  */
