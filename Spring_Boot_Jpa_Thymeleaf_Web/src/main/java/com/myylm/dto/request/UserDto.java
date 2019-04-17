@@ -10,6 +10,8 @@ import javax.validation.constraints.NotNull;
  */
 public class UserDto extends PageReq {
 
+
+    @NotNull
     private String name;
 
     private String sex;

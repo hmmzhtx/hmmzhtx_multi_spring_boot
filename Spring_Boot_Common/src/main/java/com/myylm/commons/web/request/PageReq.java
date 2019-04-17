@@ -1,5 +1,7 @@
 package com.myylm.commons.web.request;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * @des 分页参数
  * @author hmmzhtx
@@ -7,8 +9,12 @@ package com.myylm.commons.web.request;
 public class PageReq {
     public static final String DIR_ASC = "ASC";
     public static final String DIR_DESC = "DESC";
+
+    @NotNull
     private Integer page;
+    @NotNull
     private Integer start;
+    @NotNull
     private Integer limit;
     private String sort;
     private String dir;

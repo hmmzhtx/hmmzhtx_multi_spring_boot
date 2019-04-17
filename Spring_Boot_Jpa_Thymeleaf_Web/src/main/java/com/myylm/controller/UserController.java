@@ -11,11 +11,13 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
 import com.google.common.collect.Lists;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import java.util.List;
 
 /**
  * @author hmmzhtx
@@ -34,6 +36,10 @@ public class UserController {
     public ModelAndView findPage(@Valid @RequestBody UserDto userDto, BindingResult result, ModelMap modelMap){
         PageResp<UserModel>  page = null;
         if (result.hasErrors()) {
+            List<ObjectError> errorList = result.getAllErrors();
+            for (ObjectError error : errorList) {
+                System.out.println(error.getCode()+" msg="+ error.getDefaultMessage());
+            }
             page =  new PageResp(0L, Lists.newArrayList());
         }else{
             page = userService.findPage(userDto);
@@ -45,19 +51,18 @@ public class UserController {
 
     @RequestMapping(value = "/testView",method = {RequestMethod.GET, RequestMethod.POST})
     public ModelAndView testView(ModelMap modelMap){
-        logger.info("testView");
         modelMap.put("data","1111");
-        return new ModelAndView("Test",modelMap);
+        return new ModelAndView("test",modelMap);
     }
 
 
 
 
-    @RequestMapping(value = "/test",method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(value = "/testDto",method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
-    public String test( ){
-        System.out.println(1111);
-        return "111";
+    public UserDto testDto( @RequestBody UserDto userDto ){
+        System.out.println(userDto.getName());
+        return userDto;
     }
 
 
