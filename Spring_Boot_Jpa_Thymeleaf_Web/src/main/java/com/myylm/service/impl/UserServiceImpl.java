@@ -1,10 +1,13 @@
 package com.myylm.service.impl;
 
 import com.myylm.commons.web.response.PageResp;
+import com.myylm.controller.UserController;
 import com.myylm.dto.request.UserDto;
 import com.myylm.model.UserModel;
 import com.myylm.persistence.UserDao;
 import com.myylm.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -27,11 +30,14 @@ import org.springframework.util.Assert;
 @Transactional
 public class UserServiceImpl implements UserService {
 
+    public  static Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
+
     @Autowired
     private UserDao userDao;
 
     @Override
     public UserModel saveUserModel(UserModel userModel) {
+        logger.info("保存用户！！");
         return userDao.save(userModel);
     }
 

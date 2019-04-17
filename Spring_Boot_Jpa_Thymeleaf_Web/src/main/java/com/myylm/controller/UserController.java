@@ -31,7 +31,7 @@ public class UserController {
 
 
     @RequestMapping(value = "/page",method = RequestMethod.GET)
-    public ModelAndView findPage(@Valid UserDto userDto, BindingResult result, ModelMap modelMap){
+    public ModelAndView findPage(@Valid @RequestBody UserDto userDto, BindingResult result, ModelMap modelMap){
         PageResp<UserModel>  page = null;
         if (result.hasErrors()) {
             page =  new PageResp(0L, Lists.newArrayList());
