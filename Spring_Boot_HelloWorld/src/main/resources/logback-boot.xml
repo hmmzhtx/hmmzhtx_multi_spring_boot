@@ -12,11 +12,9 @@
         <!-- 定义日志存储的路径，不要配置相对路径 -->
         <Property name="FILE_NAME" value="hmmzhtx_helloword" />
         <Property name="FILE_PATH" value="A-logs\${FILE_NAME}" />
-
     </Properties>
 
     <appenders>
-
         <console name="Console" target="SYSTEM_OUT">
             <!--输出日志的格式-->
             <PatternLayout pattern="${LOG_PATTERN}"/>
