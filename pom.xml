@@ -17,7 +17,9 @@
 		<module>Spring_Boot_Scheduler</module>
         <module>Spring_Boot_Jpa_Thymeleaf_Web</module>
         <module>Spring_Boot_War</module>
-	</modules>
+        <module>Spring_Boot_Concurrency</module>
+        <module>Spring_Cloud_Eureka_Server</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>hmmzhtx_multi</name>
@@ -103,17 +105,7 @@
 			<artifactId>druid</artifactId>
 			<version>1.0.18</version>
 		</dependency>
-		
 
 	</dependencies>
-
-
-
-
-
-
-
-
-	
 
 </project>
