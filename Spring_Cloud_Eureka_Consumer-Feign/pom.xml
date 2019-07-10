@@ -9,20 +9,41 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Eureka_Server</artifactId>
+    <artifactId>Eureka_Consumer-Feign</artifactId>
+
 
 
     <dependencies>
-        <!--使用此报错：Cannot shutdown ReplicaAwareInstanceRegistry-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-netflix-eureka-server</artifactId>-->
-        <!--</dependency>-->
-        
+
+        <dependency>
+            <groupId>com.myylm</groupId>
+            <artifactId>Spring_Boot_Common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>          
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-feign</artifactId>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>2.0.2.RELEASE</version>
+        </dependency>
+        
+        <!---->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-netflix-core</artifactId>-->
+        <!--</dependency>-->
+        
     </dependencies>
 
     <!--依赖管理，用于管理spring-cloud的依赖-->
@@ -37,16 +58,15 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+    
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>1.3.0.RELEASE</version>
                 <configuration><!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>com.myylm.EurekaServerApplication</mainClass>
+                    <mainClass>com.myylm.EurekaConsumerFeignApplication</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>
@@ -64,8 +84,6 @@
         </plugins>
     </build>
 
-    
-    
-    
 
+    
 </project>

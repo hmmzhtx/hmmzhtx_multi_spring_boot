@@ -9,20 +9,29 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Eureka_Server</artifactId>
+    <artifactId>Eureka_Client</artifactId>
+
 
 
     <dependencies>
         <!--使用此报错：Cannot shutdown ReplicaAwareInstanceRegistry-->
         <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-netflix-eureka-server</artifactId>-->
+        <!--<groupId>org.springframework.cloud</groupId>-->
+        <!--<artifactId>spring-cloud-netflix-eureka-server</artifactId>-->
         <!--</dependency>-->
-        
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>          
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.myylm</groupId>
+            <artifactId>Spring_Boot_Common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+
     </dependencies>
 
     <!--依赖管理，用于管理spring-cloud的依赖-->
@@ -46,7 +55,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.3.0.RELEASE</version>
                 <configuration><!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>com.myylm.EurekaServerApplication</mainClass>
+                    <mainClass>com.myylm.EurekaClientApplication</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>
@@ -64,8 +73,6 @@
         </plugins>
     </build>
 
-    
-    
-    
 
+    
 </project>

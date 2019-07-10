@@ -19,6 +19,9 @@
         <module>Spring_Boot_War</module>
         <module>Spring_Boot_Concurrency</module>
         <module>Spring_Cloud_Eureka_Server</module>
+		<module>Spring_Cloud_Eureka_Client</module>
+		<module>Spring_Cloud_Eureka_Client_More</module>
+        <module>Spring_Cloud_Eureka_Consumer-Feign</module>
     </modules>
 	<packaging>pom</packaging>
 
