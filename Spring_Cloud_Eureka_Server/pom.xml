@@ -13,16 +13,18 @@
 
 
     <dependencies>
-        <!--使用此报错：Cannot shutdown ReplicaAwareInstanceRegistry-->
+        <!--&lt;!&ndash;使用此报错：Cannot shutdown ReplicaAwareInstanceRegistry&ndash;&gt;-->
         <!--<dependency>-->
             <!--<groupId>org.springframework.cloud</groupId>-->
             <!--<artifactId>spring-cloud-netflix-eureka-server</artifactId>-->
         <!--</dependency>-->
+        <!---->
         
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>          
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
+        
     </dependencies>
 
     <!--依赖管理，用于管理spring-cloud的依赖-->

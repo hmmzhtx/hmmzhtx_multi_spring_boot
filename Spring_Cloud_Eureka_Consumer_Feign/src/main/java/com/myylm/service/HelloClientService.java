@@ -1,4 +1,4 @@
-package com.myylm.impl;
+package com.myylm.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

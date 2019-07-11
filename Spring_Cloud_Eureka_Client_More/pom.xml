@@ -13,12 +13,6 @@
 
 
     <dependencies>
-        <!--使用此报错：Cannot shutdown ReplicaAwareInstanceRegistry-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.cloud</groupId>-->
-        <!--<artifactId>spring-cloud-netflix-eureka-server</artifactId>-->
-        <!--</dependency>-->
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
