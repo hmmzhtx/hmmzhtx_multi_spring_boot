@@ -30,4 +30,7 @@ public interface UserDao extends JpaRepository<UserModel, Integer>, JpaSpecifica
     void deleteUserModelByName(@Param("name") String name);
 
 
+
+
+
 }
