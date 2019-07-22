@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Eureka_Client</artifactId>
+    <artifactId>Spring_Cloud_Eureka_Client</artifactId>
 
     <dependencies>
 

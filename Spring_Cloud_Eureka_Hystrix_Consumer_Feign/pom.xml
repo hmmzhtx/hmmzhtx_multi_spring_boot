@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Eureka_Hystrix_Consumer_Feign</artifactId>
+    <artifactId>Spring_Cloud_Eureka_Hystrix_Consumer_Feign</artifactId>
 
     <dependencies>
 
