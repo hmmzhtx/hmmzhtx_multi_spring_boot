@@ -19,5 +19,7 @@ public class EurekaHystrixConsumerFeignApplication {
         SpringApplication.run(EurekaHystrixConsumerFeignApplication.class, args);
     }
 
+
+
     
 }
