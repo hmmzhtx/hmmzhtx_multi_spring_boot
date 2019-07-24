@@ -15,8 +15,8 @@ public class HelloController {
     HelloClientService helloClientService;
 
 
-    @GetMapping("/consumer_Hello")
-    @LoggerManage(logDescription = "consumer_Hello")
+    @GetMapping("/hystrix_consumer_Hello")
+    @LoggerManage(logDescription = "hystrix_consumer_Hello")
     public String helloSay() {
         return helloClientService.helloSay();
     }
