@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class HelloController {
 
@@ -28,8 +30,7 @@ public class HelloController {
     @ResponseBody  //此注解是设定返回数据 还是 到页面模版
     @LoggerManage(logDescription = "client_Hello")
     public String HelloWordController(){
-        ServiceInstance instance = (ServiceInstance) discoveryClient.getServices();
-        logger.info("/helloSay,host:{},service_id::{}",instance.getHost(),instance.getServiceId());
+//        String services = "Services: " + discoveryClient.getServices();
         return "Hello World";
     }
 
