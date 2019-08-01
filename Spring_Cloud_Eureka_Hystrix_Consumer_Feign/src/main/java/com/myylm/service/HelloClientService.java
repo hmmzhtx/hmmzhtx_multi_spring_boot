@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface HelloClientService {
 
     @GetMapping("/helloSay")
-    String helloSay();
+    String helloSay(String v);
 
 
     

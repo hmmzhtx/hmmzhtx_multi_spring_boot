@@ -17,7 +17,7 @@ public class HelloController {
     @GetMapping("/consumer_Hello")
     @LoggerManage(logDescription = "consumer_Hello")
     public String helloSay() {
-        return helloClientService.helloSay();
+        return helloClientService.helloSay("单纯的消费者");
     }
 
 }

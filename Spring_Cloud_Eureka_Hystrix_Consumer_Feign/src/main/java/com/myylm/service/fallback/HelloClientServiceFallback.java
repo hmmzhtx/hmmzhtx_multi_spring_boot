@@ -11,7 +11,7 @@ public class HelloClientServiceFallback  implements HelloClientService {
 
 
     @Override
-    public String helloSay() {
+    public String helloSay(String v) {
         return "反应过慢，进行服务降级";
     }
 }

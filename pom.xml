@@ -23,6 +23,7 @@
 		<!--<module>Spring_Cloud_Eureka_Client_More</module>-->
         <module>Spring_Cloud_Eureka_Consumer_Feign</module>
 		<module>Spring_Cloud_Eureka_Hystrix_Consumer_Feign</module>
+		<module>Spring_Cloud_Zuul</module>
     </modules>
 	<packaging>pom</packaging>
 

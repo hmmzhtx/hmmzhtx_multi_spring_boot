@@ -3,10 +3,11 @@ package com.myylm.Controller;
 import com.myylm.commons.aop.LoggerManage;
 import com.myylm.service.HelloClientService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * 单纯的消费者
+ * 带熔断的消费者
  */
 @RestController
 public class HelloController {
@@ -18,7 +19,7 @@ public class HelloController {
     @GetMapping("/hystrix_consumer_Hello")
     @LoggerManage(logDescription = "hystrix_consumer_Hello")
     public String helloSay() {
-        return helloClientService.helloSay();
+        return helloClientService.helloSay("带熔断的消费者");
     }
 
 }
