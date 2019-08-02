@@ -26,6 +26,11 @@
             <scope>compile</scope>
         </dependency>
 
+        <!--分布式服务跟踪模块-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
 
     </dependencies>
 
