@@ -7,6 +7,7 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Objects;
 
 /**
  *
@@ -39,6 +40,7 @@ public class UserModel {
     @Temporal(TemporalType.TIMESTAMP)
     @Column(nullable = false)
     private Date ct;
+    
 
     @PrePersist
     public void pre() {
