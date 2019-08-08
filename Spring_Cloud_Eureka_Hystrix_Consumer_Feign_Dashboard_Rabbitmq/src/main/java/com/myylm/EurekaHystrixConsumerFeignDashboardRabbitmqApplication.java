@@ -4,19 +4,20 @@ package com.myylm;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-/**
- * 带熔断降级功能的消费者
- */
-//@EnableHystrix//Feign自带熔断，不需要此注解，开启熔断在配置文件中:feign.hystrix.enabled=true（在应用主类中使用@EnableCircuitBreaker或@EnableHystrix注解开启Hystrix的使用）
+
+
+
+@EnableHystrix   //@EnableHystrix  如果要实现面板，必须加入此注解，即使fegin已经通过属性
 @EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
-public class EurekaHystrixConsumerFeignApplication {
+public class EurekaHystrixConsumerFeignDashboardRabbitmqApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaHystrixConsumerFeignApplication.class, args);
+        SpringApplication.run(EurekaHystrixConsumerFeignDashboardRabbitmqApplication.class, args);
     }
 
 }

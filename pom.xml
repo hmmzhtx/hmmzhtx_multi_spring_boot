@@ -20,11 +20,16 @@
         <module>Spring_Boot_Concurrency</module>
         <module>Spring_Cloud_Eureka_Server</module>
 		<module>Spring_Cloud_Eureka_Client</module>
+		<module>Spring_Cloud_Eureka_Client_More</module>
         <module>Spring_Cloud_Eureka_Consumer_Feign</module>
 		<module>Spring_Cloud_Eureka_Hystrix_Consumer_Feign</module>
+		<module>Spring_Cloud_Eureka_Hystrix_Consumer_Feign_Dashboard</module>
+		<module>Spring_Cloud_Eureka_Hystrix_Consumer_Feign_Dashboard_Rabbitmq</module>
 		<module>Spring_Cloud_Zuul</module>
         <module>Spring_Cloud_Eureka_Turbine</module>
+		<module>Spring_Cloud_Eureka_Turbine_Rabbitmq</module>
         <module>Spring_Cloud_Eureka_Hystrix_Dashboard</module>
+
     </modules>
 	<packaging>pom</packaging>
 
