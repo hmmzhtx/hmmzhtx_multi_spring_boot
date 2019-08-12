@@ -35,12 +35,18 @@
         <!--服务容错保护(Hystrix服务降级)-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-netflix-hystrix-stream</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+            <!--<version>1.2.1.RELEASE</version>-->
         </dependency>
 
         <dependency>
@@ -48,8 +54,6 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-        
-        
     </dependencies>
 
     <!--依赖管理，用于管理spring-cloud的依赖-->
