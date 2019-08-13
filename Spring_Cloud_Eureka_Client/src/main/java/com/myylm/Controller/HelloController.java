@@ -25,6 +25,9 @@ public class HelloController {
     @ResponseBody  //此注解是设定返回数据 还是 到页面模版
     @LoggerManage(logDescription = "client_Hello")
     public String HelloWordController(@RequestParam(value = "v") String v){
+
+        logger.info("client1....");
+
         return "Hello World" + ">>" + v;
     }
 

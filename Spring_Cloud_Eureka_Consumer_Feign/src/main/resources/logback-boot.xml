@@ -8,11 +8,16 @@
     <Properties>
         <!-- 格式化输出：%date表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度 %msg：日志消息，%n是换行符-->
         <!-- %logger{36} 表示 Logger 名字最长36个字符 -->
-        <property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
+        <!--<property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />-->
         <!-- 定义日志存储的路径，不要配置相对路径 -->
         <Property name="FILE_NAME" value="hmmzhtx_eureka_consumer" />
         <Property name="FILE_PATH" value="A-logs\${FILE_NAME}" />
+
+        <property name="LOG_PATTERN" value="[%d{yyy-MM-dd HH:mm:ss:SSS}] [${FILE_NAME},@project.artifactId@,%X{X-B3-TraceId},%X{X-B3-SpanId},%X{X-B3-ParentSpanId},%X{X-Span-Export}] [%p] - %l - %m%n"/>
+
     </Properties>
+
+
 
     <appenders>
         <console name="Console" target="SYSTEM_OUT">

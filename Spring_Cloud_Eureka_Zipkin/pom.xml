@@ -9,21 +9,39 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Spring_Cloud_Zuul</artifactId>
+    <artifactId>Spring_Cloud_Eureka_Zipkin</artifactId>
 
     <dependencies>
-
+        <!--服务客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-server</artifactId>
+            <version>2.11.7</version>
         </dependency>
-  
+        
+        <dependency>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-autoconfigure-ui</artifactId>
+            <version>2.11.7</version>
+        </dependency>
+        
+        <!--<dependency>-->
+            <!--<groupId>io.zipkin.java</groupId>-->
+            <!--<artifactId>zipkin-server</artifactId>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>io.zipkin.java</groupId>-->
+            <!--<artifactId>zipkin-autoconfigure-ui</artifactId>-->
+        <!--</dependency>-->
+
     </dependencies>
+
 
     <!--依赖管理，用于管理spring-cloud的依赖-->
     <dependencyManagement>
@@ -38,7 +56,6 @@
         </dependencies>
     </dependencyManagement>
 
-
     <build>
         <plugins>
             <plugin>
@@ -46,7 +63,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.3.0.RELEASE</version>
                 <configuration><!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>com.myylm.ZuulApplication</mainClass>
+                    <mainClass>com.myylm.ZipkinApplication</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>
@@ -64,6 +81,4 @@
         </plugins>
     </build>
 
-
-    
 </project>

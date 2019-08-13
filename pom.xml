@@ -13,6 +13,7 @@
 		<module>Spring_Boot_Springframework_Web</module>
 		<module>Spring_Boot_Thymeleaf_Web</module>
 		<module>Spring_Boot_HelloWorld</module>
+		<module>Spring_Boot_RabbitMq</module>
 		<module>Spring_Boot_LogModule</module>
 		<module>Spring_Boot_Scheduler</module>
         <module>Spring_Boot_Jpa_Thymeleaf_Web</module>
@@ -25,12 +26,12 @@
 		<module>Spring_Cloud_Eureka_Hystrix_Consumer_Feign</module>
 		<module>Spring_Cloud_Eureka_Hystrix_Consumer_Feign_Dashboard</module>
 		<module>Spring_Cloud_Eureka_Hystrix_Consumer_Feign_Dashboard_Rabbitmq</module>
-		<module>Spring_Cloud_Zuul</module>
+		<module>Spring_Cloud_Eureka_Hystrix_Dashboard</module>
         <module>Spring_Cloud_Eureka_Turbine</module>
 		<module>Spring_Cloud_Eureka_Turbine_Rabbitmq</module>
-        <module>Spring_Cloud_Eureka_Hystrix_Dashboard</module>
-
-    </modules>
+		<module>Spring_Cloud_Zuul</module>
+		<module>Spring_Cloud_Eureka_Zipkin</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>hmmzhtx_multi</name>
