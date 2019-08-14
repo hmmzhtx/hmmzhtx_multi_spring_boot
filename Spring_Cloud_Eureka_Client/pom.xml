@@ -27,6 +27,11 @@
         </dependency>
 
         <!--分布式服务跟踪模块-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-zipkin</artifactId>-->
+        <!--</dependency>-->
+        <!--这个包是spring-cloud-starter-sleuth，spring-cloud-sleuth-zipkin的整合，所以使用上面的一个等于同时引入了这2个包-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-sleuth</artifactId>
@@ -36,6 +41,18 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-sleuth-zipkin</artifactId>
         </dependency>
+        
+
+        <!--&lt;!&ndash;当使用中间件rabbit，加入spring-cloud-sleuth-stream、spring-cloud-starter-stream-rabbit  &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-sleuth-stream</artifactId>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-stream-rabbit</artifactId>-->
+        <!--</dependency>-->
 
     </dependencies>
 

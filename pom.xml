@@ -31,6 +31,7 @@
 		<module>Spring_Cloud_Eureka_Turbine_Rabbitmq</module>
 		<module>Spring_Cloud_Zuul</module>
 		<module>Spring_Cloud_Eureka_Zipkin</module>
+		<module>Spring_Cloud_Eureka_Zipkin_Rabbitmq</module>
 	</modules>
 	<packaging>pom</packaging>
 
