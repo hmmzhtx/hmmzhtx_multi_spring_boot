@@ -15,7 +15,7 @@
 ##   Spring_Boot_Scheduler
 > 定时-调度模块
 
-## spring boot 2.0 之后版本的zipkin使用
+##  spring boot 2.0 之后版本的zipkin使用
 >使用EnableZipkinServer创建自定义的zipkin服务器已经被废弃，在官网中已经给出了完整的架包
 
 ## 文本说明
