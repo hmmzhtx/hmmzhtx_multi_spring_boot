@@ -43,16 +43,16 @@
         </dependency>
         
 
-        <!--&lt;!&ndash;当使用中间件rabbit，加入spring-cloud-sleuth-stream、spring-cloud-starter-stream-rabbit  &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-sleuth-stream</artifactId>-->
-        <!--</dependency>-->
+        <!--当使用中间件rabbit，加入spring-cloud-sleuth-stream、spring-cloud-starter-stream-rabbit  -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-sleuth-stream</artifactId>
+        </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-stream-rabbit</artifactId>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+        </dependency>
 
     </dependencies>
 
