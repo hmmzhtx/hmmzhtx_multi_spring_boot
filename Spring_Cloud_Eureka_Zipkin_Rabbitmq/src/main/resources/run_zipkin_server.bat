@@ -1,4 +1,4 @@
-::在Spring Boot 2.0之后，使用EnableZipkinServer创建自定义的zipkin服务器已经被废弃，在官网中已经给出了晚上架包，下载启动即可
+::在Spring Boot 2.0之后，使用EnableZipkinServer创建自定义的zipkin服务器已经被废弃，在官网中已经给出了完整的架包，下载启动即可
 ::官网：https://zipkin.io/
 ::使用：先进行数据库表创建，sql语句：zipkin.sql
 @ECHO OFF
