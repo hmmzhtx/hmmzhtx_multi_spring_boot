@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class HelloWorldApplication {
 
-    /*king 好的*/
     public static void main(String[] args) {
         SpringApplication.run(HelloWorldApplication.class, args);
     }
