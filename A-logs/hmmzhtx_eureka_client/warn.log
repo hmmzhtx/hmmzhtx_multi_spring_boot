@@ -1,0 +1,6 @@
+[2019-08-15 14:47:45:232]  [hmmzhtx_eureka_client,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+[2019-08-15 14:47:45:248]  [hmmzhtx_eureka_client,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+[2019-08-15 15:08:49:672]  [hmmzhtx_eureka_client,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+[2019-08-15 15:08:49:685]  [hmmzhtx_eureka_client,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+[2019-08-15 15:45:15:576]  [hmmzhtx_eureka_client,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+[2019-08-15 15:45:15:583]  [hmmzhtx_eureka_client,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.

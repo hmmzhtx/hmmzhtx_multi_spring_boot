@@ -1,0 +1,36 @@
+16:35:38.092 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+16:35:38.099 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+16:40:42.898 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+16:40:42.912 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+16:44:30.947 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+16:44:30.954 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+16:53:50.316 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+16:53:50.323 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+17:05:45.121 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+17:05:45.130 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+17:11:34.819 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+17:11:34.827 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+17:15:03.255 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+17:15:03.262 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-08-13 17:21:17.294[,] [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-08-13 17:21:17.302[,] [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[2019-08-13 17:29:24:270] [,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+[2019-08-13 17:29:24:279] [,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:07:47.234  WARN [Spring_Cloud_Eureka_Consumer-Feign,,,] 8188 --- [  restartedMain] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:07:47.244  WARN [Spring_Cloud_Eureka_Consumer-Feign,,,] 8188 --- [  restartedMain] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:09:45.176  WARN [@project.artifactId@,,,] 8264 --- [  restartedMain] c.n.c.s.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:09:45.181  WARN [@project.artifactId@,,,] 8264 --- [  restartedMain] c.n.c.s.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:10:42.227  WARN [@project.artifactId@,,,] 13920 --- [  restartedMain] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:10:42.233  WARN [@project.artifactId@,,,] 13920 --- [  restartedMain] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:11:41.174  WARN [@project.artifactId@,,,] 21584 --- [  restartedMain] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:11:41.183  WARN [@project.artifactId@,,,] 21584 --- [  restartedMain] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:12:17.494  WARN [@project.artifactId@,,,] 22160 --- [  restartedMain] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:12:17.505  WARN [@project.artifactId@,,,] 22160 --- [  restartedMain] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:12:54.299  WARN [@project.artifactId@,,,] 14028 --- [  restartedMain] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+2019-08-13 18:12:54.306  WARN [@project.artifactId@,,,] 14028 --- [  restartedMain] c.n.c.s.URLConfigurationSource           : No URLs will be polled as dynamic configuration sources.
+[2019-08-13 18:14:27:864] [@project.artifactId@,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+[2019-08-13 18:14:27:871] [@project.artifactId@,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+[2019-08-13 18:28:17:775] [@project.artifactId@,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+[2019-08-13 18:28:17:784] [@project.artifactId@,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+[2019-08-13 18:52:25:728] [@project.artifactId@,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
+[2019-08-13 18:52:25:734] [@project.artifactId@,,,,] [WARN] - com.netflix.config.sources.URLConfigurationSource.<init>(URLConfigurationSource.java:121) - No URLs will be polled as dynamic configuration sources.
