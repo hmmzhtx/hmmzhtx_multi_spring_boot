@@ -1,6 +1,6 @@
 package com.myylm.Controller;
 
-import com.myylm.commons.aop.LoggerManage;
+import com.myylm.commons.aop.LogAop.LoggerManage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

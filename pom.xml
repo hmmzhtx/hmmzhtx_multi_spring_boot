@@ -32,7 +32,8 @@
 		<module>Spring_Cloud_Zuul</module>
 		<module>Spring_Cloud_Eureka_Zipkin</module>
 		<module>Spring_Cloud_Eureka_Zipkin_Rabbitmq</module>
-	</modules>
+        <module>Spring_Boot_Luna_Redis</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>hmmzhtx_multi</name>

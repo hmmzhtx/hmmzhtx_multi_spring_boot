@@ -1,4 +1,4 @@
-package com.myylm.commons.aop;
+package com.myylm.commons.aop.LogAop;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.aspectj.lang.JoinPoint;
@@ -10,7 +10,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Arrays;
+
 /**
  * @des 日志管理
  * @author huangmingming

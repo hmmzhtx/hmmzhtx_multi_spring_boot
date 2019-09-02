@@ -1,6 +1,6 @@
 package com.myylm.Controller;
 
-import com.myylm.commons.aop.LoggerManage;
+import com.myylm.commons.aop.LogAop.LoggerManage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.RequestMapping;
