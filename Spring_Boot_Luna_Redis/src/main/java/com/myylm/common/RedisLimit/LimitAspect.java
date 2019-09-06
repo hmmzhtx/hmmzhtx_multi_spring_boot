@@ -1,6 +1,7 @@
-package com.myylm.common;
+package com.myylm.common.RedisLimit;
 
-import com.myylm.commons.ExceptionHandler.GlobalDefultExceptionHandler;
+import com.myylm.ExceptionHandler.ServiceException;
+import com.myylm.Utils.IPUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -11,10 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
-import javax.servlet.http.HttpServletRequest;
 import java.io.Serializable;
 import java.lang.reflect.Method;
 import java.util.Collections;
@@ -40,8 +37,7 @@ public class LimitAspect {
         RateLimit rateLimit = method.getAnnotation(RateLimit.class);
 
         if (rateLimit != null) {
-            HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-            String ipAddress = getIpAddr(request);
+            String ipAddress = IPUtils.getIpAddr();
 
             StringBuffer stringBuffer = new StringBuffer();
             stringBuffer.append(ipAddress).append("-")
@@ -62,31 +58,8 @@ public class LimitAspect {
             return joinPoint.proceed();
         }
         //由于本文没有配置公共异常类，如果配置可替换
-        throw new RuntimeException("已经到设置限流次数");
+        throw new ServiceException("访问太频繁了");
     }
 
-    private static String getIpAddr(HttpServletRequest request) {
-        String ipAddress = null;
-        try {
-            ipAddress = request.getHeader("x-forwarded-for");
-            if (ipAddress == null || ipAddress.length() == 0 || "unknown".equalsIgnoreCase(ipAddress)) {
-                ipAddress = request.getHeader("Proxy-Client-IP");
-            }
-            if (ipAddress == null || ipAddress.length() == 0 || "unknown".equalsIgnoreCase(ipAddress)) {
-                ipAddress = request.getHeader("WL-Proxy-Client-IP");
-            }
-            if (ipAddress == null || ipAddress.length() == 0 || "unknown".equalsIgnoreCase(ipAddress)) {
-                ipAddress = request.getRemoteAddr();
-            }
-            // 对于通过多个代理的情况，第一个IP为客户端真实IP,多个IP按照','分割
-            if (ipAddress != null && ipAddress.length() > 15) { // "***.***.***.***".length()
-                if (ipAddress.indexOf(",") > 0) {
-                    ipAddress = ipAddress.substring(0, ipAddress.indexOf(","));
-                }
-            }
-        } catch (Exception e) {
-            ipAddress = "";
-        }
-        return ipAddress;
-    }
+
 }

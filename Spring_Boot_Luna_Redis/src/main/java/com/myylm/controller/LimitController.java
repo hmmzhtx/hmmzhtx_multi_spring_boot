@@ -1,6 +1,6 @@
 package com.myylm.controller;
 
-import com.myylm.common.RateLimit;
+import com.myylm.common.RedisLimit.RateLimit;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

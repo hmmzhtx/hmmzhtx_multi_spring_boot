@@ -1,4 +1,4 @@
-package com.myylm.common;
+package com.myylm.common.RedisLimit;
 
 import org.springframework.stereotype.Indexed;
 
